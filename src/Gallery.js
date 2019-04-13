@@ -15,14 +15,14 @@ export default class Gallery extends Component {
     return (
       <div className="App">
         <div className='movimgs_container'> 
-          <Movie name='Black Mirror' img = {blackmirror} />
-          <Movie name='Death Note' img = {deathnote} />
-          <Movie name='Walking Dead' img = {walkngdead} />
-          <Movie name='Wire' img = {wire} />
-          <Movie name='Breaking Bad' img = {breakingbad} />
-          <Movie name='Movie Cover' img = {moviecover} />
+          <Movie id='blackmirror' name='Black Mirror' img = {blackmirror} />
+          <Movie id='deathnote' name='Death Note' img = {deathnote} />
+          <Movie id='walkingdead' name='Walking Dead' img = {walkngdead} />
+          <Movie id='wire' name='Wire' img = {wire} />
+          <Movie id='breakingbad' name='Breaking Bad' img = {breakingbad} />
+          <Movie id='moviecover' name='Movie Cover' img = {moviecover} />
         </div>
-      </div> 
-    );
-  }
+      </div>  
+    )
 }
+}   
