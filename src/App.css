@@ -3,14 +3,17 @@
 }
 
 .movimgs_container {
-  display: flex; 
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  /* display: flex; 
+  flex-wrap: wrap; */
 }
 
 .item{
   /* flex:1; if change 2, it will take 2 bit to each image */
   /* flex-basis: 200px; if item < 200, go down no need to care mobile. */
-  width:33.3%;
+  /* flex:1;
+  flex-basis:300px; */
   position: relative;
 }
 
@@ -22,7 +25,6 @@ img{
 .title{
   position: absolute;
   left: 50%;
-  /* top: 50%; */
   transform: translateX(-50%);
   color: red;
 }
@@ -41,13 +43,13 @@ img{
   bottom: 100px;
 }
 
-@media only screen and (max-width: 600px) { 
+/* @media only screen and (max-width: 600px) { 
   .movimgs_container {
     flex-direction: column;
   }
   .item{
     width:100%;
   }
-}
+} */
 
 

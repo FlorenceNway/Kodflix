@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <div className='movimgs_container'> 
           <Route exact path='/' component={Gallery}  />
-          <Route exact path="/:details" component={Details} />
+          <Route exact path="/:movieid" component={Details} />
         </div>
       </div>
      </Router> 

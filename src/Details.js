@@ -1,11 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import getGallery from './getGallery';
 
-export default function Details(){
-    return (
-      <div>
-        <h1>Hello, this will be the details page for each Movie & TV show :)</h1>
-        <Link to='/'> Back to Home </Link>
-      </div>
-    );
-  };
+
+export default class Details extends React.Component{
+    constructor(){
+        super();
+        this.state ={
+            movie_name : []
+        }
+    }
+
+    componentDidMount(){
+        setTimeout(()=>{
+            let movieid = this.props.match.params.movieid;
+            let moviename = getGallery().find(function(movie){
+                return movie.id === movieid;
+            }).name
+            this.setState({
+                movie_name: moviename
+            })
+        },0)
+    }
+
+    render(){
+        return (
+            <div>
+              <h1>Welcome to {this.state.movie_name}</h1>
+              <Link to='/'> Back to Home </Link>
+            </div>
+          );
+    }
+}
+
+
+ 
