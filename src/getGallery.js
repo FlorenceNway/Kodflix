@@ -8,13 +8,13 @@ import wire from './wire.jpg';
 
 export default function getGallery(){
     return [
-            {id:'blackmirror', name:'Black Mirror', img:blackmirror},
-            {id:'deathnote', name:'Death Note', img :deathnote},
-            {id:'walkingdead', name:'Walking Dead', img :walkngdead},
-            {id:'wire', name:'Wire', img :wire},
-            {id:'breakingbad', name:'Breaking Bad', img :breakingbad},  
-            {id:'moviecover', name:'Movie Cover', img :moviecover},    
-            {id:'wire', name:'Wire', img :wire},
-            {id:'breakingbad', name:'Breaking Bad', img :breakingbad} 
+            {id:'blackmirror', name:'Black Mirror', img:blackmirror, details:'this is detail'},
+            {id:'deathnote', name:'Death Note', img :deathnote, details:'this is detail'},
+            {id:'walkingdead', name:'Walking Dead', img :walkngdead, details:'this is detail'},
+            {id:'wire', name:'Wire', img :wire, details:'this is detail'},
+            {id:'breakingbad', name:'Breaking Bad', img :breakingbad, details:'this is detail'},  
+            {id:'moviecover', name:'Movie Cover', img :moviecover, details:'this is detail'},    
+            {id:'wire2', name:'Wire', img :wire, details:'this is detail'},
+            {id:'breakingbad2', name:'Breaking Bad', img :breakingbad, details: 'this is detail'} 
     ]
 }
