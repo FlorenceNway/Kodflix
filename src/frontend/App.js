@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Details from './Detail/Details.js';
-import Gallery from './Gallery';
+import Gallery from './Gallery.js';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom"; 
 import NotFound from './NotFound';
 

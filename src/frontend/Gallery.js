@@ -4,7 +4,6 @@ import Movie from './Movie';
 import getGallery from './getGallery';
 
 
-
 export default class Gallery extends Component {
   render() {
     return (
